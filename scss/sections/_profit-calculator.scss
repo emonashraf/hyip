@@ -1,0 +1,19 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.profit-calculator {
+  .profit-calculator-content {
+    padding: 3rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  .dropdown-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: $primary;
+  }
+  .amount {
+    width: 100%;
+  }
+}

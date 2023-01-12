@@ -1,0 +1,40 @@
+@use "custom";
+
+// // IMPORT THE COMPONENTS
+
+@use "components/animations";
+@use "components/buttns";
+@use "components/mixins";
+@use "components/typography";
+@use "components/carousel";
+@use "components/color";
+@use "components/global";
+// // IMPORT THE SECTIONS
+// @use "sections/navbar";
+@use "layout/header";
+@use "sections/hero";
+@use "sections/counter-v1";
+@use "sections/counter-v2";
+@use "sections/about";
+@use "sections/banner";
+@use "sections/choose-section";
+@use "sections/investment-card";
+@use "sections/how-it-work";
+@use "sections/features";
+@use "sections/profit-calculator";
+@use "sections/app-download";
+@use "sections/table";
+@use "sections/watch-video";
+@use "sections/investor";
+@use "sections/faq";
+@use "sections/my-account";
+@use "sections/form";
+@use "sections/testimonials";
+@use "sections/payment-getway";
+@use "sections/sidebar";
+@use "sections/withdrawal";
+@use "sections/history";
+@use "sections/contact";
+@use "sections/blog";
+@use "layout/breadcrumb";
+@use "layout/footer";

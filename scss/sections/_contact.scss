@@ -1,0 +1,43 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+.contact-section {
+  .contact-title {
+    margin-bottom: 2rem;
+  }
+  .contact-info {
+    &__item {
+      display: flex;
+      gap: 0.7rem;
+      margin-bottom: 2rem;
+      .icon-box {
+        .icon {
+          @include socion-icon;
+        }
+      }
+      .content {
+        .title {
+          font-size: 1.3rem;
+          font-weight: 600;
+          margin-bottom: 0;
+        }
+        .text {
+          color: $gray-700;
+          transition: all 0.5s ease;
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+    .social-icons {
+      .title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin: 1rem 0;
+      }
+      i {
+        @include socion-icon;
+      }
+    }
+  }
+}

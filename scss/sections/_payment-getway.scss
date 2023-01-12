@@ -1,0 +1,29 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.payments-gateway {
+  .slider-item {
+    img {
+      padding: .2rem 3rem;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .payments-gateway {
+    .slider-item {
+      img {
+        padding: 0.5rem 2rem;
+      }
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .payments-gateway {
+    .slider-item {
+      img {
+        padding: 0.5rem 1.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+
+.features{
+    padding: 2rem;
+    text-align: center;
+    border-radius: .5rem;
+    @include shadow-1;
+    &__icon{
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+        border-radius: 50%;
+        padding: 1rem; 
+    }
+    &__icon-1{
+        color: $primary;
+        background-color: rgba($primary, 0.1);
+    } 
+    &__icon-2{
+        color: $yellow;
+        background-color: rgba($yellow, 0.1);
+    } 
+    &__icon-3{
+        color: $red;
+        background-color: rgba($red, 0.1);
+    }  
+    &__icon-4{
+        color: $blue;
+        background-color: rgba($blue, 0.1);
+    }  
+    &__icon-5{
+        color: $info;
+        background-color: rgba($info, 0.1);
+    }  
+    &__icon-6{
+        color: $orange;
+        background-color: rgba($orange, 0.1);
+    } 
+    &__title{
+        margin-bottom: 1rem;
+    } 
+    &__text{
+        margin: 0;
+    }
+}

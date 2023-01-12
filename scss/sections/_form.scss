@@ -1,0 +1,97 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+.form-control {
+  padding: 0.8rem;
+}
+
+.form-area {
+  @include shadow-1;
+  padding: 2rem 1rem;
+
+  .sub-title {
+    overflow: hidden;
+    p {
+      padding: 0 0.5rem;
+      position: relative;
+      display: inline-block;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        background-color: $primary;
+        height: 1px;
+        width: 100vw;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        background-color: $primary;
+        height: 1px;
+        width: 100vw;
+      }
+    }
+  }
+  .user {
+    .user-input {
+      display: none;
+    }
+    .user-img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .my-form-control {
+    border-right: none;
+
+    &:focus {
+      border-right: none;
+      outline: none;
+      ~ .input-group-text {
+        border-color: $primary;
+      }
+    }
+  }
+  .input-group-text {
+    background-color: transparent;
+  }
+  .forget-password-bottom {
+    display: none;
+  }
+  @include media-breakpoint-down(sm) {
+    .forget-password {
+      display: none;
+    }
+    .forget-password-col {
+      margin: 0;
+    }
+
+    .forget-password-bottom {
+      display: block;
+    }
+  }
+}
+.input-group {
+  .form-control {
+    border-right: none;
+    &:focus {
+      border-right: none;
+      ~ .input-group-text {
+        border-color: $primary;
+      }
+    }
+  }
+  .input-group-text {
+    background-color: transparent;
+  }
+}
+
+.form-control,
+.form-check-input {
+  &:focus {
+    border: 1px solid $primary;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,62 @@
+@use "../custom" as *;
+
+.design-1 {
+  background-color: $cyan;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.design-2 {
+  background-color: $teal;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.design-3 {
+  background-color: $green;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.design-4 {
+  background-color: $purple;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.design-5 {
+  background-color: $blue;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.design-6 {
+  background-color: $indigo;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.color-1 {
+  color: $cyan;
+}
+.color-2 {
+  color: $teal;
+}
+.color-3 {
+  color: $green;
+}
+.color-4 {
+  color: $purple;
+}
+.primary-color {
+  color: $primary;
+}
+.btn-color-1 {
+  color: $cyan;
+  &:hover {
+    color: #fff;
+    background-color: $cyan;
+  }
+}
+.btn-color-2 {
+  color: $teal;
+  &:hover {
+    color: #fff;
+    background-color: $teal;
+  }
+}

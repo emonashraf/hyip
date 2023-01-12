@@ -1,0 +1,29 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.about-us {
+  &__img-box {
+    display: inline-block;
+    background-color: $primary;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      border-radius: 50%;
+      transition: all 1s ease;
+      &:hover {
+        opacity: 0.5;
+        transform: scale(1.2);
+        transition: all 0.5s ease;
+      }
+    }
+  }
+  &__icon {
+    @include icon;
+  }
+
+  &__content {
+    .title {
+      font-size: 1.4rem;
+    }
+  }
+}

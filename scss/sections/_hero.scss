@@ -1,0 +1,17 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+.hero-section {
+  background-color: rgba($primary, 0.2);
+  width: 100%;
+  height: 100%;
+  padding-top: 10rem;
+  padding-bottom: 9rem;
+  @include media-breakpoint-down(sm) {
+    padding-top: 7rem;
+    text-align: center;
+  }
+}
+.hero-inner {
+  align-items: center;
+  justify-content: center;
+}

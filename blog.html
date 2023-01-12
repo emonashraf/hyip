@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save Money</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome.all.min.css" />
+    <!-- Line Awesome -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/cssanimation.min.css" />
+    <!-- glightbox -->
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.css" />
+    <!-- Bootstrap 5.2.2 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <!-- Google Fonts -->
+  </head>
+  <body>
+    <!-- ************ Header SECTION ************** -->
+    <nav
+      class="navbar navbar-expand-xl fixed-top menu-bar cssanimation leFadeInTop"
+      data-aos="fade-down"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Save<span>Money</span></a>
+        <div class="btn-wrapper d-flex gap-3">
+          <div class="nav-btn-group flex-end nav-btn-v2">
+            <a href="signin.html" class="btn rounded-pill nav-btn-1 me-1"
+              >Sign in</a
+            >
+            <a href="signup.html" class="btn rounded-pill nav-btn-2">Sign up</a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          data-aos="fade-down"
+        >
+          <div class="offcanvas-header">
+            <a class="navbar-brand" href="#">Save<span>Money</span></a>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav flex-grow-1 nav-bar-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="investment.html">Investment</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dashboard
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="my_account.html"
+                      >My Account</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="withdrawal.html"
+                      >Withdrawal</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="history.html">History</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="wallet.html">Wallet</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="settings.html">Settings</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="about.html">about</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="investor.html">Investor</a>
+                  </li>
+                  <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                  <li>
+                    <a class="dropdown-item" href="signin.html">Sign In</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="signup.html">Sign UP</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="forget_password.html"
+                      >Forget Password</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="error.html">404</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Blog
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item active" href="blog.html"
+                      >Blog Grid</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="blog_datails.html"
+                      >Blog Datails</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class="nav-btn-group">
+              <a href="signin.html" class="btn rounded-pill nav-btn-1 me-1"
+                >Sign in</a
+              >
+              <a href="signup.html" class="btn rounded-pill nav-btn-2"
+                >Sign up</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ************ BreadCrumb Section ************** -->
+    <div class="breadcrumb-sectoin">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <h4 class="display-6 fw-bold title" data-aos="fade-left">
+            Frequently Asked Questions
+          </h4>
+          <ol class="breadcrumb" data-aos="fade-right">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Blog</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- ************ Blog ************** -->
+    <section class="blog-section ptb">
+      <div class="container">
+        <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-3 mb-5">
+          <!-- col 1 -->
+          <div class="col" data-aos="flip-left">
+            <div class="blog-card">
+              <img
+                src="img/blog/blog-1.jpg"
+                class="card-img-top blog-card__img"
+                alt="Blog Image"
+              />
+              <div class="blog-card__body">
+                <ul
+                  class="d-flex justify-content-between list-unstyled m-0 p-0 blog-card__list"
+                >
+                  <li>
+                    <i class="lar la-user"></i>
+                    jondoe
+                  </li>
+                  <li>
+                    <i class="lar la-calendar-check"></i>
+                    2 jan 2022
+                  </li>
+                </ul>
+                <h6 class="title">
+                  <a href="blog_datails.html"
+                    >The Best Credit Card Bonus Offers 2022</a
+                  >
+                </h6>
+                <p class="text">
+                  Lorem ipsum dolor sit, amet lorem adipisicing elit.
+                  Voluptatem, et.
+                </p>
+                <a href="#" class="blog-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- col 2 -->
+          <div class="col" data-aos="flip-left">
+            <div class="blog-card">
+              <img
+                src="img/blog/blog-2.jpg"
+                class="card-img-top blog-card__img"
+                alt="Blog Image"
+              />
+              <div class="blog-card__body">
+                <ul
+                  class="d-flex justify-content-between list-unstyled m-0 p-0 blog-card__list"
+                >
+                  <li>
+                    <i class="lar la-user"></i>
+                    jondoe
+                  </li>
+                  <li>
+                    <i class="lar la-calendar-check"></i>
+                    2 jan 2022
+                  </li>
+                </ul>
+                <h6 class="title">
+                  <a href="blog_datails.html"
+                    >The Best Credit Card Bonus Offers 2022</a
+                  >
+                </h6>
+                <p class="text">
+                  Lorem ipsum dolor sit, amet lorem adipisicing elit.
+                  Voluptatem, et.
+                </p>
+                <a href="#" class="blog-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- col 3 -->
+          <div class="col" data-aos="flip-left">
+            <div class="blog-card">
+              <img
+                src="img/blog/blog-3.jpg"
+                class="card-img-top blog-card__img"
+                alt="Blog Image"
+              />
+              <div class="blog-card__body">
+                <ul
+                  class="d-flex justify-content-between list-unstyled m-0 p-0 blog-card__list"
+                >
+                  <li>
+                    <i class="lar la-user"></i>
+                    jondoe
+                  </li>
+                  <li>
+                    <i class="lar la-calendar-check"></i>
+                    2 jan 2022
+                  </li>
+                </ul>
+                <h6 class="title">
+                  <a href="blog_datails.html"
+                    >The Best Credit Card Bonus Offers 2022</a
+                  >
+                </h6>
+                <p class="text">
+                  Lorem ipsum dolor sit, amet lorem adipisicing elit.
+                  Voluptatem, et.
+                </p>
+                <a href="#" class="blog-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- col 4 -->
+          <div class="col" data-aos="flip-left">
+            <div class="blog-card">
+              <img
+                src="img/blog/blog-4.jpg"
+                class="card-img-top blog-card__img"
+                alt="Blog Image"
+              />
+              <div class="blog-card__body">
+                <ul
+                  class="d-flex justify-content-between list-unstyled m-0 p-0 blog-card__list"
+                >
+                  <li>
+                    <i class="lar la-user"></i>
+                    jondoe
+                  </li>
+                  <li>
+                    <i class="lar la-calendar-check"></i>
+                    2 jan 2022
+                  </li>
+                </ul>
+                <h6 class="title">
+                  <a href="blog_datails.html"
+                    >The Best Credit Card Bonus Offers 2022</a
+                  >
+                </h6>
+                <p class="text">
+                  Lorem ipsum dolor sit, amet lorem adipisicing elit.
+                  Voluptatem, et.
+                </p>
+                <a href="#" class="blog-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- col 5 -->
+          <div class="col" data-aos="flip-left">
+            <div class="blog-card">
+              <img
+                src="img/blog/blog-5.jpg"
+                class="card-img-top blog-card__img"
+                alt="Blog Image"
+              />
+              <div class="blog-card__body">
+                <ul
+                  class="d-flex justify-content-between list-unstyled m-0 p-0 blog-card__list"
+                >
+                  <li>
+                    <i class="lar la-user"></i>
+                    jondoe
+                  </li>
+                  <li>
+                    <i class="lar la-calendar-check"></i>
+                    2 jan 2022
+                  </li>
+                </ul>
+                <h6 class="title">
+                  <a href="blog_datails.html"
+                    >The Best Credit Card Bonus Offers 2022</a
+                  >
+                </h6>
+                <p class="text">
+                  Lorem ipsum dolor sit, amet lorem adipisicing elit.
+                  Voluptatem, et.
+                </p>
+                <a href="#" class="blog-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- col 6 -->
+          <div class="col" data-aos="flip-left">
+            <div class="blog-card">
+              <img
+                src="img/blog/blog-6.jpg"
+                class="card-img-top blog-card__img"
+                alt="Blog Image"
+              />
+              <div class="blog-card__body">
+                <ul
+                  class="d-flex justify-content-between list-unstyled m-0 p-0 blog-card__list"
+                >
+                  <li>
+                    <i class="lar la-user"></i>
+                    jondoe
+                  </li>
+                  <li>
+                    <i class="lar la-calendar-check"></i>
+                    2 jan 2022
+                  </li>
+                </ul>
+                <h6 class="title">
+                  <a href="blog_datails.html"
+                    >The Best Credit Card Bonus Offers 2022</a
+                  >
+                </h6>
+                <p class="text">
+                  Lorem ipsum dolor sit, amet lorem adipisicing elit.
+                  Voluptatem, et.
+                </p>
+                <a href="#" class="blog-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav aria-label="Page navigation example  pt-4" data-aos="fade-right">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link active" href="#">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!--Payments GateWay  -->
+    <div class="payments-gateway py-5 bg-light shadow-lg">
+      <div class="container">
+        <div class="slider slider-col-6">
+          <!-- Carousel card 1 -->
+          <div class="slider-item" data-aos="flip-left">
+            <a href="#">
+              <img
+                src="/img/payment-gatway/payment-card-1.png "
+                alt="payment-card-1"
+                class="img-fluid shadow-sm rounded"
+              />
+            </a>
+          </div>
+          <div class="slider-item" data-aos="flip-right">
+            <a href="#">
+              <img
+                src="/img/payment-gatway/payment-card-2.png "
+                alt="payment-card-2"
+                class="img-fluid shadow-sm rounded"
+              />
+            </a>
+          </div>
+          <div class="slider-item" data-aos="flip-left">
+            <a href="#">
+              <img
+                src="/img/payment-gatway/payment-card-3.png "
+                alt="payment-card-3"
+                class="img-fluid shadow-sm rounded"
+              />
+            </a>
+          </div>
+          <div class="slider-item" data-aos="flip-right">
+            <a href="#">
+              <img
+                src="/img/payment-gatway/payment-card-4.png "
+                alt="payment-card-4"
+                class="img-fluid shadow-sm rounded"
+              />
+            </a>
+          </div>
+          <div class="slider-item" data-aos="flip-left">
+            <a href="#">
+              <img
+                src="/img/payment-gatway/payment-card-5.png "
+                alt="payment-card-4"
+                class="img-fluid shadow-sm rounded"
+              />
+            </a>
+          </div>
+          <div class="slider-item" data-aos="flip-right">
+            <a href="#">
+              <img
+                src="/img/payment-gatway/payment-card-6.png "
+                alt="payment-card-4"
+                class="img-fluid shadow-sm rounded"
+              />
+            </a>
+          </div>
+          <div class="slider-item" data-aos="flip-left">
+            <a href="#">
+              <img
+                src="/img/payment-gatway/payment-card-7.png "
+                alt="payment-card-4"
+                class="img-fluid shadow-sm rounded"
+              />
+            </a>
+          </div>
+          <div class="slider-item" data-aos="flip-right">
+            <a href="#">
+              <img
+                src="/img/payment-gatway/payment-card-8.png "
+                alt="payment-card-4"
+                class="img-fluid shadow-sm rounded"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ************ Footer Section ************** -->
+    <footer class="footer">
+      <!-- START THE CONTENT FOR THE CAMPANY INFO -->
+      <div class="footer-content text-white">
+        <div class="container">
+          <div class="row text-white pt-5">
+            <div class="col-lg-4 pb-5 mx-auto" data-aos="flip-up">
+              <h5 class="text-capitalize fw-bold pb-2">SaveMeney</h5>
+              <p class="lh-lg">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                magnam ratione itaque debitis rerum possimus voluptatum impedit.
+              </p>
+              <div class="social-icons pt-3">
+                <a href="#">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-lg-2 mb-4 mx-auto" data-aos="flip-down">
+              <h6 class="text-capitalize fw-bold pb-2">Companay</h6>
+              <ul class="list-inline footer-list">
+                <li>
+                  <a href="#">
+                    <i class="las la-angle-double-right"></i>
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="las la-angle-double-right"></i>
+                    Investment
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="las la-angle-double-right"></i>
+                    Faq
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="las la-angle-double-right"></i>
+                    Contact Us
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="las la-angle-double-right"></i>
+                    Privicy Policy
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-4 mx-auto" data-aos="flip-up">
+              <h6 class="text-capitalize fw-bold pb-2">Useful Links</h6>
+              <ul class="list-inline footer-list">
+                <li>
+                  <a href="#">
+                    <i class="las la-angle-double-right"></i>
+                    Manage Account
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="las la-angle-double-right"></i>
+                    How to Withdraw
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="las la-angle-double-right"></i>
+                    Account Info
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="las la-angle-double-right"></i>
+                    Help Line
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 mb-4 mx-auto" data-aos="flip-down">
+              <h6 class="text-capitalize fw-bold pb-2">Contact Us</h6>
+              <ul class="list-inline footer-list">
+                <li><a href="#">Sector: 11, Road: 15, Uttara, Dhaka</a></li>
+                <li><a href="#">Call Us: +880 1876722271</a></li>
+                <li><a href="#">ashrafemon784@gmail.com</a></li>
+                <li><a href="#">ahrrafemon785@gmail.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- START THE COPYRIGHT INFO -->
+      <div class="footer-bottom py-4">
+        <div class="container">
+          <div class="row text-center text-white">
+            <div class="col-12">
+              <div class="footer-bottom__copy-right">
+                &copy; Copyright 2022 <a href="#">SaveMoney.</a> All Right
+                Sesign By <a href="#">Webstor</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/custom-glightbox.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

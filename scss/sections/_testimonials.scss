@@ -1,0 +1,96 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(/img/testimonial/testimonials-bg.jpg);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  .testimonials-header {
+    color: #fff;
+  }
+  .slider-item {
+    position: relative;
+  }
+  &__card {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 2.5rem 1.25rem;
+    border-radius: 0.625rem;
+    height: auto;
+    text-align: center;
+    i {
+      font-size: 1.5rem;
+      color: $primary;
+    }
+  }
+  &__name {
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  &__picture {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.testimonials-card {
+  // padding: 9rem 0;
+  padding-bottom: 8.5rem;
+
+  &__body {
+    background-color: $primary;
+    color: #fff;
+    padding: 3rem;
+    position: relative;
+  }
+  &__body-1 {
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      transform: translate(200%, 98%);
+      left: 0;
+      width: 0;
+      height: 0;
+      border-top: 40px solid $primary;
+      border-right: 35px solid transparent;
+    }
+  }
+  &__body-2 {
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      transform: translate(-200%, 98%);
+      right: 0;
+      width: 0;
+      height: 0;
+      border-top: 40px solid $primary;
+      border-left: 35px solid transparent;
+    }
+  }
+  &__picture {
+    position: absolute;
+    bottom: 0;
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  .picture-1 {
+    left: 0;
+    transform: translateX(20%);
+  }
+  .picture-2 {
+    right: 0;
+    transform: translateX(-20%);
+  }
+}

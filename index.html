@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save Money</title>
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/cssanimation.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome.all.min.css" />
+    <!-- Line Awesome -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+    <!-- glightbox -->
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.css" />
+    <!-- Bootstrap 5.2.2 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Main js -->
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+  </head>
+  <body>
+    <!-- ************ Header SECTION ************** -->
+    <nav
+      class="navbar navbar-expand-xl fixed-top menu-bar cssanimation leFadeInTop"
+      data-aos="fade-down"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Save<span>Money</span></a>
+        <div class="btn-wrapper d-flex gap-3">
+          <div class="nav-btn-group flex-end nav-btn-v2">
+            <a href="signin.html" class="btn rounded-pill nav-btn-1 me-1"
+              >Sign in</a
+            >
+            <a href="signup.html" class="btn rounded-pill nav-btn-2">Sign up</a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          data-aos="fade-down"
+        >
+          <div class="offcanvas-header">
+            <a class="navbar-brand" href="#">Save<span>Money</span></a>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav flex-grow-1 nav-bar-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="investment.html">Investment</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dashboard
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="my_account.html"
+                      >My Account</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="withdrawal.html"
+                      >Withdrawal</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="history.html">History</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="wallet.html">Wallet</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="settings.html">Settings</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="about.html">about</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="investor.html">Investor</a>
+                  </li>
+                  <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                  <li>
+                    <a class="dropdown-item" href="signin.html">Sign In</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="signup.html">Sign UP</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="forget_password.html"
+                      >Forget Password</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="error.html">404</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Blog
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="blog.html">Blog Grid</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="blog_datails.html"
+                      >Blog Datails</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <div class="nav-btn-group">
+              <a href="signin.html" class="btn rounded-pill nav-btn-1 me-1"
+                >Sign in</a
+              >
+              <a href="signup.html" class="btn rounded-pill nav-btn-2"
+                >Sign up</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ************ HERO SECTION ************** -->
+    <section class="hero-section">
+      <div class="row align-items-center">
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="container">
+            <div class="row pb-5 gy-5">
+              <!-- item 1 -->
+              <div
+                class="col-lg-7 col-md-6 align-self-start"
+                data-aos="fade-right"
+              >
+                <h1 class="display-3 mb-3">
+                  <span class="display-3--description lh-base">
+                    Lorem ipsum dolor sit amet.
+                  </span>
+                  <span class="display-3--heading"
+                    >Invest Your Money For Future</span
+                  >
+                </h1>
+                <div class="hero-btn mt-5">
+                  <a href="#" class="rounded-pill primary-btn">
+                    Get Start
+                    <span>
+                      <i class="las la-arrow-right"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <!-- item 2 -->
+              <div class="col-lg-5 col-md-6" data-aos="fade-up">
+                <div class="hero-img-box">
+                  <img
+                    src="img/hero-1.png"
+                    class="d-block w-100 img-fluid"
+                    alt="hero"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="counter-section counter-v1">
+      <div class="container">
+        <div class="counter">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4">
+            <!-- counter item -1 -->
+            <div class="col">
+              <div class="counter-item rounded text-center">
+                <div class="counter-icon-box">
+                  <i class="las la-users icon design-1"></i>
+                </div>
+                <h6 class="counter-title">Total Members</h6>
+                <h3 class="counter-number">60K +</h3>
+              </div>
+            </div>
+            <!-- counter item -2 -->
+            <div class="col">
+              <div class="counter-item rounded text-center">
+                <div class="counter-icon-box">
+                  <i class="las la-coins icon design-2"></i>
+                </div>
+                <h6 class="counter-title">Total Deposited</h6>
+                <h3 class="counter-number">$70,348</h3>
+              </div>
+            </div>
+            <!-- counter item -3 -->
+            <div class="col">
+              <div class="counter-item rounded text-center">
+                <div class="counter-icon-box">
+                  <i class="las la-hand-holding-usd icon design-3"></i>
+                </div>
+                <h6 class="counter-title">Total Profits</h6>
+                <h3 class="counter-number">$50,00,165</h3>
+              </div>
+            </div>
+            <!-- counter item -4 -->
+            <div class="col">
+              <div class="counter-item rounded text-center">
+                <div class="counter-icon-box">
+                  <i class="las la-exchange-alt icon design-4"></i>
+                </div>
+                <h6 class="counter-title">Total Transaction</h6>
+                <h3 class="counter-number">300+</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ************ About Us ************** -->
+    <section class="about-us bg-white ptb">
+      <div class="container">
+        <div
+          class="row row-cols-1 row-cols-md-1 row-cols-lg-2 justify-content-between align-items-center gy-4"
+        >
+          <div class="col text-center" data-aos="fade-right">
+            <div class="about-us__img-box">
+              <img
+                src="img/about/about.jpg"
+                alt="About"
+                class="img-fluid rounded-circle"
+              />
+            </div>
+          </div>
+          <div class="col" data-aos="fade-left">
+            <div class="about-content">
+              <h2 class="display-5 fw-bold">About <span>Us</span></h2>
+              <p class="lead pb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                facere quaerat, perspiciatis architecto quas temporibus?
+              </p>
+              <ul class="list-unstyled">
+                <li class="d-flex gap-3 align-items-start mb-3">
+                  <i class="las la-check-square about-us__icon design-1"></i>
+                  <div class="about-us__content">
+                    <h5 class="title">We Innovate</h5>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Facere a similique aperiam laudantium praesentium ex.
+                    </p>
+                  </div>
+                </li>
+                <li class="d-flex gap-3 align-items-start mb-3">
+                  <i class="las la-check-square about-us__icon design-2"></i>
+                  <div class="about-us__content">
+                    <h5 class="title">Saving & Investments</h5>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Facere a similique aperiam laudantium praesentium ex.
+                    </p>
+                  </div>
+                </li>
+                <li class="d-flex gap-3 align-items-start mb-3">
+                  <i
+                    class="las la-check-square about-us__icon about-us__icon design-3"
+                  ></i>
+                  <div class="about-us__content">
+                    <h5 class="title">Licenced & investments</h5>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Facere a similique aperiam laudantium praesentium ex.
+                    </p>
+                  </div>
+                </li>
+                <li class="pt-4">
+                  <a href="#" class="rounded-pill primary-btn mb-5">
+                    Reade More
+                    <span>
+                      <i class="las la-arrow-right"></i>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ************ How It Work ************** -->
+    <section class="how-it-work-section bg-light ptb">
+      <div class="container">
+        <div class="row text-center justify-content-center px-5 pb-3">
+          <div class="col-md-7 col-sm-10">
+            <h1 class="display-5 fw-bold">How It <span>Work</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-5">
+          <!-- col 1 -->
+          <div class="col">
+            <div class="how-it-work">
+              <div class="how-it-work__icon design-1">
+                <img
+                  src="img/how-it-work/work-1.png"
+                  alt="Work Image"
+                  class="img-fluid"
+                />
+                <span class="design-1">1</span>
+              </div>
+              <h5 class="how-it-work__title">Register An Account</h5>
+              <p class="how-it-work__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Facilis, voluptatem?
+              </p>
+              <div class="how-it-work__arrow-img">
+                <img
+                  src="img/how-it-work/arrow1.svg"
+                  alt="Arrow"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- col 2 -->
+          <div class="col">
+            <div class="how-it-work">
+              <div class="how-it-work__icon design-2">
+                <img
+                  src="/img/how-it-work/work-2.png"
+                  alt="Work Image"
+                  class="img-fluid"
+                />
+                <span class="design-2">2</span>
+              </div>
+              <h5 class="how-it-work__title">Invest Your Money</h5>
+              <p class="how-it-work__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Facilis, voluptatem?
+              </p>
+              <div class="how-it-work__arrow-img">
+                <img
+                  src="img/how-it-work/arrow2.svg"
+                  alt="Arrow"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- col 3 -->
+          <div class="col">
+            <div class="how-it-work">
+              <div class="how-it-work__icon design-3">
+                <img
+                  src="/img/how-it-work/work-3.png"
+                  alt="Work Image"
+                  class="img-fluid"
+                />
+                <span class="design-3">3</span>
+              </div>
+              <h5 class="how-it-work__title">Get Smart Profit</h5>
+              <p class="how-it-work__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Facilis, voluptatem?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ************ Best Investment Section ************** -->
+    <section class="best-plan-section bg-white ptb">
+      <div class="container">
+        <div class="row text-center justify-content-center px-5 pb-4">
+          <div class="col-md-7 col-sm-10">
+            <h1 class="display-5 fw-bold">Best Investment <span>Plan</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="slider slider-col-4">
+          <!-- Carousel card 1 -->
+          <div class="slider-itme" data-aos="flip-left">
+            <div class="invesment-card">
+              <div class="invesment-card__icon-box">
+                <i class="las la-coins icon design-1"></i>
+              </div>
+              <h5 class="invesment-card__title invesment-card__title-1">
+                Gold Plan
+              </h5>
+              <ul class="invesment-card__list">
+                <li class="title-box">
+                  <h2 class="title">$20<span>/ Month</span></h2>
+                </li>
+
+                <li>
+                  <i class="las la-check-circle"></i>
+                  Maximan Ivmest: $100
+                </li>
+                <li>
+                  <i class="lar la-check-circle"></i>
+                  Maximan Ivmest: $1000
+                </li>
+                <li>
+                  <i class="lar la-check-circle"></i>
+                  Up to 100 User Available
+                </li>
+              </ul>
+              <div class="invesment-card__btn-box">
+                <a href="#" class="invest-btn design-1"> Invest Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel card 2 -->
+          <div class="slider-itme" data-aos="flip-left">
+            <div class="invesment-card">
+              <div class="invesment-card__icon-box">
+                <i class="las la-coins icon design-2"></i>
+              </div>
+              <h5 class="invesment-card__title invesment-card__title-2">
+                Bronze Plan
+              </h5>
+              <ul class="invesment-card__list">
+                <li class="title-box">
+                  <h2 class="title">$10<span>/ Forever</span></h2>
+                </li>
+
+                <li>
+                  <i class="las la-check-circle"></i>
+                  Maximan Ivmest: $100
+                </li>
+                <li>
+                  <i class="lar la-check-circle"></i>
+                  Maximan Ivmest: $1000
+                </li>
+                <li>
+                  <i class="lar la-check-circle"></i>
+                  Up to 100 User Available
+                </li>
+              </ul>
+              <div class="invesment-card__btn-box">
+                <a href="#" class="invest-btn design-2"> Invest Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel card 3 -->
+          <div class="slider-itme" data-aos="flip-left">
+            <div class="invesment-card">
+              <div class="invesment-card__icon-box">
+                <i class="las la-coins icon design-3"></i>
+              </div>
+              <h5 class="invesment-card__title invesment-card__title-3">
+                Copper Plan
+              </h5>
+              <ul class="invesment-card__list">
+                <li class="title-box">
+                  <h2 class="title">$50<span>/ 10 Days</span></h2>
+                </li>
+
+                <li>
+                  <i class="las la-check-circle"></i>
+                  Maximan Ivmest: $100
+                </li>
+                <li>
+                  <i class="lar la-check-circle"></i>
+                  Maximan Ivmest: $1000
+                </li>
+                <li>
+                  <i class="lar la-check-circle"></i>
+                  Up to 100 User Available
+                </li>
+              </ul>
+              <div class="invesment-card__btn-box">
+                <a href="#" class="invest-btn design-3"> Invest Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel card 4 -->
+          <div class="slider-itme" data-aos="flip-left">
+            <div class="invesment-card">
+              <div class="invesment-card__icon-box">
+                <i class="las la-coins icon design-4"></i>
+              </div>
+              <h5 class="invesment-card__title invesment-card__title-4">
+                Silver Plan
+              </h5>
+              <ul class="invesment-card__list">
+                <li class="title-box">
+                  <h2 class="title">$30<span>/ 24 Hours</span></h2>
+                </li>
+
+                <li>
+                  <i class="las la-check-circle"></i>
+                  Maximan Ivmest: $100
+                </li>
+                <li>
+                  <i class="lar la-check-circle"></i>
+                  Maximan Ivmest: $1000
+                </li>
+                <li>
+                  <i class="lar la-check-circle"></i>
+                  Up to 100 User Available
+                </li>
+              </ul>
+              <div class="invesment-card__btn-box">
+                <a href="#" class="invest-btn design-4"> Invest Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ************ Banner ************** -->
+    <section class="banner ptb">
+      <div class="container">
+        <div class="row align-items-center gy-4 justify-content-center">
+          <div class="col-10">
+            <h2 class="banner-v1__title pb-3">
+              We Were Always Thinking Global Community
+            </h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad fuga
+              odio accusamus quas iusto vel eligendi quaerat reprehenderit
+              labore laborum nihil tempora cum aliquid pariatur, consequuntur
+              magnam libero voluptatum tempore? Assumenda harum esse incidunt at
+              molestias deleniti architecto tempora iure!
+            </p>
+            <a href="signup.html" class="white-btn rounded-pill mt-3">
+              Get Started
+              <span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ************ Our Featurs ************** -->
+    <section class="features-section ptb">
+      <div class="container">
+        <div class="row text-center justify-content-center px-5 pb-4">
+          <div class="col-md-7 col-sm-10">
+            <h1 class="display-5 fw-bold">Our<span>Featurs</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4">
+          <!-- Col 1 -->
+          <div class="col">
+            <div class="features">
+              <i class="las la-certificate features__icon features__icon-1"></i>
+              <h5 class="features__title">We are Certified</h5>
+              <p class="features__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                pariatur voluptates placeat minima.
+              </p>
+            </div>
+          </div>
+          <!-- Col 2-->
+          <div class="col">
+            <div class="features">
+              <i class="las la-lock features__icon features__icon-2"></i>
+              <h5 class="features__title">We are Secure</h5>
+              <p class="features__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                pariatur voluptates placeat minima.
+              </p>
+            </div>
+          </div>
+          <!-- Col 3-->
+          <div class="col">
+            <div class="features">
+              <i class="las la-coins features__icon features__icon-3"></i>
+              <h5 class="features__title">We are Profitable</h5>
+              <p class="features__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                pariatur voluptates placeat minima.
+              </p>
+            </div>
+          </div>
+          <!-- Col 4 -->
+          <div class="col">
+            <div class="features">
+              <i class="las la-globe features__icon features__icon-4"></i>
+              <h5 class="features__title">We are Global</h5>
+              <p class="features__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                pariatur voluptates placeat minima.
+              </p>
+            </div>
+          </div>
+          <!-- Col 5-->
+          <div class="col">
+            <div class="features">
+              <i class="las la-headset features__icon features__icon-5"></i>
+              <h5 class="features__title">24/7 Support</h5>
+              <p class="features__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                pariatur voluptates placeat minima.
+              </p>
+            </div>
+          </div>
+          <!-- Col 6 -->
+          <div class="col">
+            <div class="features">
+              <i class="las la-gift features__icon features__icon-6"></i>
+              <h5 class="features__title">Quick Withdrawal</h5>
+              <p class="features__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                pariatur voluptates placeat minima.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ************ Play Video ************** -->
+    <section class="wath-video">
+      <div class="container">
+        <div class="row justify-content-center align-items-center text-white">
+          <div class="col-md-8 col-10 text-center">
+            <div class="video-box">
+              <a href="#" class="glightbox play-btn">
+                <span class="play-btn__icon"
+                  ><i class="fa-solid fa-circle-play"></i>
+                </span>
+                <span
+                  class="border-animation border-animation--border-1"
+                ></span>
+                <span
+                  class="border-animation border-animation--border-2"
+                ></span>
+              </a>
+            </div>
+            <h1 class="pt-4">Watch Our Video Blog</h1>
+            <p class="lead">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+              quos error, excepturi nesciunt quod perferendis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ************ Latest Transaction ************** -->
+    <section class="transaction-section ptb bg-white">
+      <div class="container">
+        <div
+          class="choose-header d-flex justify-content-between flex-wrap gap-3 mb-4"
+          data-aos="flip-left"
+        >
+          <div class="choose-header-item">
+            <h1 class="display-5 fw-bold">Latest <span>Transaction</span></h1>
+          </div>
+          <div class="choose-header-item">
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="deposits-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#deposits-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="deposits-tab-pane"
+                  aria-selected="true"
+                >
+                  Deposits
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#profile-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile-tab-pane"
+                  aria-selected="false"
+                >
+                  Withdrawals
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-content">
+          <!-- Tab Item 1 -->
+          <div
+            class="tab-pane fade show active cssanimation fadeInLeft"
+            id="deposits-tab-pane"
+            role="tabpanel"
+            tabindex="0"
+            data-aos="fade-right"
+          >
+            <div class="table-responsive">
+              <table class="table table-hover shadow-sm border">
+                <thead>
+                  <tr class="table-heading">
+                    <th scope="col">Name</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Currency</th>
+                    <th scope="col">Deposit</th>
+                  </tr>
+                </thead>
+                <tbody class="tbody">
+                  <!-- tr 1 -->
+                  <tr>
+                    <th scope="row">
+                      <img
+                        src="img/transaction/person-1.jpg"
+                        alt="Transaction Image"
+                        class="img-fluid me-2"
+                      />
+                      <span>Liam</span>
+                    </th>
+                    <td>12 jan 2022</td>
+                    <td>$15,000.00</td>
+                    <td>Dollar</td>
+                    <td>15 Days</td>
+                  </tr>
+                  <!-- tr 2 -->
+                  <tr>
+                    <th scope="row">
+                      <img
+                        src="img/transaction/person-2.jpg"
+                        alt="Transaction Image"
+                        class="img-fluid me-2"
+                      />
+                      <span>Olivia</span>
+                    </th>
+                    <td>10 Jan 2022</td>
+                    <td>$25,000.00</td>
+                    <td>Bitcoin</td>
+                    <td>13 Days</td>
+                  </tr>
+                  <!-- tr 3 -->
+                  <tr>
+                    <th scope="row">
+                      <img
+                        src="img/transaction/person-3.jpg"
+                        alt="Transaction Image"
+                        class="img-fluid me-2"
+                      />
+                      <span>Noah</span>
+                    </th>
+                    <td>14 Jan 2022</td>
+                    <td>$35,000.00</td>
+                    <td>Card</td>
+                    <td>1 Year</td>
+                  </tr>
+                  <!-- tr 4 -->
+                  <tr>
+                    <th scope="row">
+                      <img
+                        src="img/transaction/person-4.jpg"
+                        alt="Transaction Image"
+                        class="img-fluid me-2"
+                      />
+                      <span>Emu</span>
+                    </th>
+                    <td>15 jan 2022</td>
+                    <td>$30,000.00</td>
+                    <td>Dollar</td>
+                    <td>2 Month</td>
+                  </tr>
+                  <!-- tr 5 -->
+                  <tr>
+                    <th scope="row">
+                      <img
+                        src="img/transaction/person-5.jpg"
+                        alt="Transaction Image"
+                        class="img-fluid me-2"
+                      />
+                      <span>James</span>
+                    </th>
+                    <td>2 Fab 2022</td>
+                    <td>$32,000.00</td>
+                    <td>Euro</td>
+                    <td>Forever</td>
+                  </tr>
+                  <!-- tr 6 -->
+                  <tr>
+                    <th scope="row">
+                      <img
+                        src="img/transaction/person-6.jpg"
+                        alt="Transaction Image"
+                        class="img-fluid me-2"
+                      />
+                      <span>Ava</span>
+                    </th>
+                    <td>14 Jan 2022</td>
+                    <td>$55,000.00</td>
+                    <td>Card</td>
+                    <td>12 Hours</td>
+                  </tr>
+                  <!-- tr 7 -->
+                  <tr>
+                    <th scope="row">
+                      <img
+                        src="img/transaction/person-7.jpg"
+                        alt="Transaction Image"
+                        class="img-fluid me-2"
+                      />
+                      <span>Jack</span>
+                    </th>
+                    <td>20 Fab 2022</td>
+                    <td>$15,000.00</td>
+                    <td>ETH</td>
+                    <td>24 Hours</td>
+                  </tr>
+                  <!-- tr 8 -->
+                  <tr>
+                    <th scope="row">
+                      <img
+                        src="img/transaction/person-8.jpg"
+                        alt="Transaction Image"
+                        class="img-fluid me-2"
+                      />
+                      <span>Sophia</span>
+                    </th>
+                    <td>25 Fab 2022</td>
+                    <td>$60,000.00</td>
+                    <td>Dollar</td>
+                    <td>1 Month</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Tab 2 -->
+          <div
+            class="tab-pane fade cssanimation fadeInRight"
+            id="profile-tab-pane"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+            tabindex="0"
+            data-aos="fade-left"
+          >
+            <div class="table-responsive">
+              <table class="table table-hover shadow-sm border">
+                <thead>
+                  <tr class="table-heading">
+                    <th scope="col">Name</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Currency</th>
+                    <th scope="col">Deposit</th>
+                  </tr>
+                </thead>
+                <tbody class="tbody">
+                  <!-- tr 1 -->
+                  <tr>
+                    <th scope="row">
+                      <img
+                        src="img/transaction/person-1.jpg"
+                        alt="Transaction Image"
+                        class="img-fluid me-2"
+                      />
+                      <span>Liam</span>
+                    </th>
+                    <td>12 jan 2022</td>
+                    <td>$15,000.00</td>
+                    <td>Dollar</td>
+                    <td>15 Days</td>
+                  </tr>
+                  <!-- tr 2 -->
+                  <tr>
+                    <th scope="row">
+                      <img
+                        src="img/transaction/person-2.jpg"
+                        alt="Transaction Image"
+                        class="img-fluid me-2"
+                      />
+                      <span>Olivia</span>
+                    </th>
+                    <td>10 Jan 2022</td>
+                    <td>$25,000.00</td>
+                    <td>Bitcoin</td>
+                    <td>13 Days</td>
+                  </tr>
+                  <!-- tr 3 -->
+                  <tr>
+                    <th scope="row">
+                      <img
+                        src="img/transaction/person-3.jpg"
+                        alt="Transaction Image"
+                        class="img-fluid me-2"
+                      />
+                      <span>Noah</span>
+                    </th>
+                    <td>14 Jan 2022</td>
+                    <td>$35,000.00</td>
+                    <td>Card</td>
+                    <td>1 Year</td>
+                  </tr>
+                  <!-- tr 4 -->
+                  <tr>
+                    <th scope="row">
+                      <img
+                        src="img/transaction/person-4.jpg"
+                        alt="Transaction Image"
+                        class="img-fluid me-2"
+                      />
+                      <span>Emu</span>
+                    </th>
+                    <td>15 jan 2022</td>
+                    <td>$30,000.00</td>
+                    <td>Dollar</td>
+                    <td>2 Month</td>
+                  </tr>
+                  <!-- tr 5 -->
+                  <tr>
+                    <th scope="row">
+                      <img
+                        src="img/transaction/person-5.jpg"
+                        alt="Transaction Image"
+                        class="img-fluid me-2"
+                      />
+                      <span>James</span>
+                    </th>
+                    <td>2 Fab 2022</td>
+                    <td>$32,000.00</td>
+                    <td>Euro</td>
+                    <td>Forever</td>
+                  </tr>
+                  <!-- tr 6 -->
+                  <tr>
+                    <th scope="row">
+                      <img
+                        src="img/transaction/person-6.jpg"
+                        alt="Transaction Image"
+                        class="img-fluid me-2"
+                      />
+                      <span>Ava</span>
+                    </th>
+                    <td>14 Jan 2022</td>
+                    <td>$55,000.00</td>
+                    <td>Card</td>
+                    <td>12 Hours</td>
+                  </tr>
+                  <!-- tr 7 -->
+                  <tr>
+                    <th scope="row">
+                      <img
+                        src="img/transaction/person-7.jpg"
+                        alt="Transaction Image"
+                        class="img-fluid me-2"
+                      />
+                      <span>Jack</span>
+                    </th>
+                    <td>20 Fab 2022</td>
+                    <td>$15,000.00</td>
+                    <td>ETH</td>
+                    <td>24 Hours</td>
+                  </tr>
+                  <!-- tr 8 -->
+                  <tr>
+                    <th scope="row">
+                      <img
+                        src="img/transaction/person-8.jpg"
+                        alt="Transaction Image"
+                        class="img-fluid me-2"
+                      />
+                      <span>Sophia</span>
+                    </th>
+                    <td>25 Fab 2022</td>
+                    <td>$60,000.00</td>
+                    <td>Dollar</td>
+                    <td>1 Month</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ************ App Download ************** -->
+    <section class="app-download ptb">
+      <div class="row text-center justify-content-center px-5 pb-4 text-white">
+        <div class="col-md-7 col-sm-10">
+          <h1 class="display-5 fw-bold">Download our App</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <!-- col 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="app-download__item">
+              <i class="fab fa-google-play icon"></i>
+              <h5 class="title">Google Play</h5>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+                necessitatibus at.
+              </p>
+              <a href="#" class="primary-btn rounded-pill">download now</a>
+            </div>
+          </div>
+          <!-- col 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="app-download__item">
+              <i class="fab fa-apple icon"></i>
+              <h5 class="title">Apple Store</h5>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+                necessitatibus at.
+              </p>
+              <a href="#" class="primary-btn rounded-pill">download now</a>
+            </div>
+          </div>
+          <!-- col 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="app-download__item">
+              <i class="fab fa-windows icon"></i>
+              <h5 class="title">Microsoft Store</h5>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+                necessitatibus at.
+              </p>
+              <a href="#" class="primary-btn rounded-pill">download now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ************ Best Investor Section ************** -->
+    <section class="investor-section ptb bg-light">
+      <div class="container">
+        <div class="row text-center justify-content-center px-5 pb-4">
+          <div class="col-md-7 col-sm-10">
+            <h1 class="display-5 fw-bold">Best <span>Investor</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="slider-col-4">
+          <!-- investor card 1 -->
+          <div class="col" data-aos="flip-right">
+            <div class="investor-card">
+              <div class="investor-card__image">
+                <img
+                  src="img/investor/investor-1.jpg"
+                  class="card-img-top d-block"
+                  alt="Investor"
+                />
+              </div>
+              <div
+                class="investor-card__icon cssanimation leFadeInBottom sequence"
+              >
+                <a href="#" class="product-icon">
+                  <i class="lab la-facebook-f"></i>
+                </a>
+                <a href="#" class="product-icon">
+                  <i class="lab la-twitter"></i>
+                </a>
+                <a href="#" class="product-icon">
+                  <i class="lab la-linkedin-in"></i>
+                </a>
+                <a href="#" class="product-icon">
+                  <i class="lab la-instagram"></i>
+                </a>
+              </div>
+              <div class="investor-card__body">
+                <h6 class="title">Emu Oliva</h6>
+                <p class="text">$2235.00 USD</p>
+              </div>
+            </div>
+          </div>
+          <!-- investor card 2 -->
+          <div class="col" data-aos="flip-right">
+            <div class="investor-card">
+              <div class="investor-card__image">
+                <img
+                  src="img/investor/investor-2.jpg"
+                  class="card-img-top d-block"
+                  alt="Investor"
+                />
+              </div>
+              <div
+                class="investor-card__icon cssanimation leFadeInBottom sequence"
+              >
+                <a href="#" class="product-icon">
+                  <i class="lab la-facebook-f"></i>
+                </a>
+                <a href="#" class="product-icon">
+                  <i class="lab la-twitter"></i>
+                </a>
+                <a href="#" class="product-icon">
+                  <i class="lab la-linkedin-in"></i>
+                </a>
+                <a href="#" class="product-icon">
+                  <i class="lab la-instagram"></i>
+                </a>
+              </div>
+              <div class="investor-card__body">
+                <h6 class="title">James Willim</h6>
+                <p class="text">$375.00 USD</p>
+              </div>
+            </div>
+          </div>
+          <!-- investor card 3 -->
+          <div class="col" data-aos="flip-right">
+            <div class="investor-card">
+              <div class="investor-card__image">
+                <img
+                  src="img/investor/investor-3.jpg"
+                  class="card-img-top d-block"
+                  alt="Investor"
+                />
+              </div>
+              <div
+                class="investor-card__icon cssanimation leFadeInBottom sequence"
+              >
+                <a href="#" class="product-icon">
+                  <i class="lab la-facebook-f"></i>
+                </a>
+                <a href="#" class="product-icon">
+                  <i class="lab la-twitter"></i>
+                </a>
+                <a href="#" class="product-icon">
+                  <i class="lab la-linkedin-in"></i>
+                </a>
+                <a href="#" class="product-icon">
+                  <i class="lab la-instagram"></i>
+                </a>
+              </div>
+              <div class="investor-card__body">
+                <h6 class="title">Ava Sophia</h6>
+                <p class="text">$567.00 USD</p>
+              </div>
+            </div>
+          </div>
+          <!-- investor card 4 -->
+          <div class="col" data-aos="flip-right">
+            <div class="investor-card">
+              <div class="investor-card__image">
+                <img
+                  src="img/investor/investor-4.jpg"
+                  class="card-img-top d-block"
+                  alt="Investor"
+                />
+              </div>
+              <div
+                class="investor-card__icon cssanimation leFadeInBottom sequence"
+              >
+                <a href="#" class="product-icon">
+                  <i class="lab la-facebook-f"></i>
+                </a>
+                <a href="#" class="product-icon">
+                  <i class="lab la-twitter"></i>
+                </a>
+                <a href="#" class="product-icon">
+                  <i class="lab la-linkedin-in"></i>
+                </a>
+                <a href="#" class="product-icon">
+                  <i class="lab la-instagram"></i>
+                </a>
+              </div>
+              <div class="investor-card__body">
+                <h6 class="title">James son</h6>
+                <p class="text">$387.00 USD</p>
+              </div>
+            </div>
+          </div>
+          <!-- investor card 5 -->
+          <div class="col" data-aos="flip-right">
+            <div class="investor-card">
+              <div class="investor-card__image">
+                <img
+                  src="img/investor/investor-5.jpg"
+                  class="card-img-top d-block"
+                  alt="Investor"
+                />
+              </div>
+              <div
+                class="investor-card__icon cssanimation leFadeInBottom sequence"
+              >
+                <a href="#" class="product-icon">
+                  <i class="lab la-facebook-f"></i>
+                </a>
+                <a href="#" class="product-icon">
+                  <i class="lab la-twitter"></i>
+                </a>
+                <a href="#" class="product-icon">
+                  <i class="lab la-linkedin-in"></i>
+                </a>
+                <a href="#" class="product-icon">
+                  <i class="lab la-instagram"></i>
+                </a>
+              </div>
+              <div class="investor-card__body">
+                <h6 class="title">Sophia Ava</h6>
+                <p class="text">$4235.00 USD</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ************ Profit Calculator ************** -->
+    <section class="profit-calculator ptb bg-white">
+      <div class="container">
+        <div class="row text-center justify-content-center px-5 pb-4">
+          <div class="col-md-7 col-sm-10">
+            <h1 class="display-5 fw-bold">Profit <span>Calculator</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-9 col-sm-10">
+            <div class="profit-calculator-content rounded-2" data-aos="fade-up">
+              <div class="row gy-4">
+                <div class="col-md-6 mb-2">
+                  <div class="dropdown">
+                    <label class="dropdown-title">Select The Plan</label>
+                    <button
+                      class="form-control bg-white py-2 dropdown-toggle d-flex justify-content-between align-items-center"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      style="width: 100%"
+                    >
+                      Golden Plan
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Golden Plan</a></li>
+                      <li><a class="dropdown-item" href="#">Silver Plan</a></li>
+                      <li><a class="dropdown-item" href="#">Coper Plan</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                  <div class="dropdown">
+                    <label class="dropdown-title">Select Payment Method</label>
+                    <button
+                      class="form-control bg-white py-2 dropdown-toggle d-flex justify-content-between align-items-center"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      style="width: 100%"
+                    >
+                      Bitcoin
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Bitcoin</a></li>
+                      <li><a class="dropdown-item" href="#">ETH</a></li>
+                      <li><a class="dropdown-item" href="#">Dollar</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                  <div class="input-group"></div>
+                  <label class="dropdown-title d-block">Enter The amount</label>
+                  <input
+                    type="number"
+                    class="form-control amount rounded-2 p-2"
+                    name="amount"
+                    placeholder="178"
+                    min="1"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-2">
+                  <div class="input-group"></div>
+                  <label class="dropdown-title d-block">Enter The amount</label>
+                  <input
+                    type="text"
+                    class="form-control amount rounded-2 p-2"
+                    placeholder="0.00"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ************ Testimonials Section ************** -->
+    <section class="testimonials ptb bg-light">
+      <div class="container">
+        <div
+          class="row text-center justify-content-center px-5 pb-4 text-white"
+        >
+          <div class="col-md-7 col-sm-10">
+            <h1 class="display-5 fw-bold">What People <span>Says</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="slider slider-col-2">
+            <!-- slider item -1 -->
+            <div class="slider-item" data-aos="fade-right">
+              <div class="testimonials-card">
+                <div
+                  class="testimonials-card__body testimonials-card__body-1 text-center rounded-3"
+                >
+                  <p class="lh-lg">
+                    <i class="fas fa-quote-left"></i>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reiciendis, optio quos harum ratione enim quasi
+                    reprehenderit veniam voluptate labore odio. Beatae.
+                    <i class="fas fa-quote-right"></i>
+                  </p>
+                </div>
+                <div
+                  class="testimonials-card__picture picture-1 d-flex gap-3 align-items-center"
+                >
+                  <img
+                    src="img/testimonial/client-1.jpg"
+                    alt="client-1 picture"
+                    class="rounded-circle img-fluid"
+                  />
+                  <div class="title text-white mt-3">
+                    <h4 class="mb-0">Jhon Doe</h4>
+                    <p>(Best Investor)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slider item -2 -->
+            <div class="slider-item pt-md-5" data-aos="fade-left">
+              <div class="testimonials-card">
+                <div
+                  class="testimonials-card__body testimonials-card__body-2 text-center rounded-3"
+                >
+                  <p class="lh-lg">
+                    <i class="fas fa-quote-left"></i>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reiciendis, optio quos harum ratione enim quasi
+                    reprehenderit veniam voluptate labore odio. Beatae.
+                    <i class="fas fa-quote-right"></i>
+                  </p>
+                </div>
+                <div
+                  class="testimonials-card__picture picture-2 d-flex gap-3 align-items-center"
+                >
+                  <div class="title text-white mt-3">
+                    <h4 class="mb-0">Sofia Ava</h4>
+                    <p>(Best Investor)</p>
+                  </div>
+                  <img
+                    src="img/testimonial/client-2.jpg"
+                    alt="client-1 picture"
+                    class="rounded-circle img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- slider item -3 -->
+            <div class="slider-item" data-aos="fade-right">
+              <div class="testimonials-card">
+                <div
+                  class="testimonials-card__body testimonials-card__body-1 text-center rounded-3"
+                >
+                  <p class="lh-lg">
+                    <i class="fas fa-quote-left"></i>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reiciendis, optio quos harum ratione enim quasi
+                    reprehenderit veniam voluptate labore odio. Beatae.
+                    <i class="fas fa-quote-right"></i>
+                  </p>
+                </div>
+                <div
+                  class="testimonials-card__picture picture-1 d-flex gap-3 align-items-center"
+                >
+                  <img
+                    src="img/testimonial/client-3.jpg"
+                    alt="client-1 picture"
+                    class="rounded-circle img-fluid"
+                  />
+                  <div class="title text-white mt-3">
+                    <h4 class="mb-0">Emu Oliva</h4>
+                    <p>(Best Investor)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slider item -4 -->
+            <div class="slider-item pt-md-5" data-aos="fade-left">
+              <div class="testimonials-card">
+                <div
+                  class="testimonials-card__body testimonials-card__body-2 text-center rounded-3"
+                >
+                  <p class="lh-lg">
+                    <i class="fas fa-quote-left"></i>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Reiciendis, optio quos harum ratione enim quasi
+                    reprehenderit veniam voluptate labore odio. Beatae.
+                    <i class="fas fa-quote-right"></i>
+                  </p>
+                </div>
+                <div
+                  class="testimonials-card__picture picture-2 d-flex gap-3 align-items-center"
+                >
+                  <div class="title text-white mt-3">
+                    <h4 class="mb-0">James William</h4>
+                    <p>(Best Investor)</p>
+                  </div>
+                  <img
+                    src="img/testimonial/client-4.jpg"
+                    alt="client-1 picture"
+                    class="rounded-circle img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ************ Blog Section ************** -->
+    <section class="blog-section ptb bg-light">
+      <div class="container">
+        <div class="row text-center justify-content-center px-5 pb-4 gy-4">
+          <div class="col-md-7 col-sm-10">
+            <h1 class="display-5 fw-bold">Our Latest <span>News</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-3 mb-5">
+          <!-- col 1 -->
+          <div class="col" data-aos="flip-left">
+            <div class="blog-card">
+              <img
+                src="img/blog/blog-1.jpg"
+                class="card-img-top blog-card__img"
+                alt="Blog Image"
+              />
+              <div class="blog-card__body">
+                <ul
+                  class="d-flex justify-content-between list-unstyled m-0 p-0 blog-card__list"
+                >
+                  <li>
+                    <i class="lar la-user"></i>
+                    jondoe
+                  </li>
+                  <li>
+                    <i class="lar la-calendar-check"></i>
+                    2 jan 2022
+                  </li>
+                </ul>
+                <h6 class="title">
+                  <a href="blog_datails.html"
+                    >The Best Credit Card Bonus Offers 2022</a
+                  >
+                </h6>
+                <p class="text">
+                  Lorem ipsum dolor sit, amet lorem adipisicing elit.
+                  Voluptatem, et.
+                </p>
+                <a href="#" class="blog-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- col 2 -->
+          <div class="col" data-aos="flip-left">
+            <div class="blog-card">
+              <img
+                src="img/blog/blog-2.jpg"
+                class="card-img-top blog-card__img"
+                alt="Blog Image"
+              />
+              <div class="blog-card__body">
+                <ul
+                  class="d-flex justify-content-between list-unstyled m-0 p-0 blog-card__list"
+                >
+                  <li>
+                    <i class="lar la-user"></i>
+                    jondoe
+                  </li>
+                  <li>
+                    <i class="lar la-calendar-check"></i>
+                    2 jan 2022
+                  </li>
+                </ul>
+                <h6 class="title">
+                  <a href="blog_datails.html"
+                    >The Best Credit Card Bonus Offers 2022</a
+                  >
+                </h6>
+                <p class="text">
+                  Lorem ipsum dolor sit, amet lorem adipisicing elit.
+                  Voluptatem, et.
+                </p>
+                <a href="#" class="blog-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- col 3 -->
+          <div class="col" data-aos="flip-left">
+            <div class="blog-card">
+              <img
+                src="img/blog/blog-3.jpg"
+                class="card-img-top blog-card__img"
+                alt="Blog Image"
+              />
+              <div class="blog-card__body">
+                <ul
+                  class="d-flex justify-content-between list-unstyled m-0 p-0 blog-card__list"
+                >
+                  <li>
+                    <i class="lar la-user"></i>
+                    jondoe
+                  </li>
+                  <li>
+                    <i class="lar la-calendar-check"></i>
+                    2 jan 2022
+                  </li>
+                </ul>
+                <h6 class="title">
+                  <a href="blog_datails.html"
+                    >The Best Credit Card Bonus Offers 2022</a
+                  >
+                </h6>
+                <p class="text">
+                  Lorem ipsum dolor sit, amet lorem adipisicing elit.
+                  Voluptatem, et.
+                </p>
+                <a href="#" class="blog-btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ************ Faq Section ************** -->
+    <section id="faq" class="faq ptb bg-white">
+      <div class="container">
+        <div class="row text-center justify-content-center px-5 pb-4">
+          <div class="col-md-7 col-sm-10">
+            <h1 class="display-5 fw-bold">
+              Frrequently Asked <span>Questions</span>
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center" data-aos="fade-right">
+          <div class="col-md-9 col-sm-11">
+            <div class="accordion" id="accordionExample">
+              <!-- ACXORDION ITEM 1 -->
+              <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Why You Should Become An Investor?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It
+                    is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <!-- ACXORDION ITEM 2 -->
+              <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Why You Choose Us?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <!-- ACXORDION ITEM 3 -->
+              <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    How can I get help by inbound markeing?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <!-- ACXORDION ITEM 4 -->
+              <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Can I Invest Using Cryptocurrency?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Payments GateWay  -->
+    <div class="payments-gateway py-5 bg-light shadow-lg">
+      <div class="container">
+        <div class="slider slider-col-6">
+          <!-- Carousel card 1 -->
+          <div class="slider-item" data-aos="flip-left">
+            <a href="#">
+              <img
+                src="/img/payment-gatway/payment-card-1.png "
+                alt="payment-card-1"
+                class="img-fluid shadow-sm rounded"
+              />
+            </a>
+          </div>
+          <div class="slider-item" data-aos="flip-right">
+            <a href="#">
+              <img
+                src="/img/payment-gatway/payment-card-2.png "
+                alt="payment-card-2"
+                class="img-fluid shadow-sm rounded"
+              />
+            </a>
+          </div>
+          <div class="slider-item" data-aos="flip-left">
+            <a href="#">
+              <img
+                src="/img/payment-gatway/payment-card-3.png "
+                alt="payment-card-3"
+                class="img-fluid shadow-sm rounded"
+              />
+            </a>
+          </div>
+          <div class="slider-item" data-aos="flip-right">
+            <a href="#">
+              <img
+                src="/img/payment-gatway/payment-card-4.png "
+                alt="payment-card-4"
+                class="img-fluid shadow-sm rounded"
+              />
+            </a>
+          </div>
+          <div class="slider-item" data-aos="flip-left">
+            <a href="#">
+              <img
+                src="/img/payment-gatway/payment-card-5.png "
+                alt="payment-card-4"
+                class="img-fluid shadow-sm rounded"
+              />
+            </a>
+          </div>
+          <div class="slider-item" data-aos="flip-right">
+            <a href="#">
+              <img
+                src="/img/payment-gatway/payment-card-6.png "
+                alt="payment-card-4"
+                class="img-fluid shadow-sm rounded"
+              />
+            </a>
+          </div>
+          <div class="slider-item" data-aos="flip-left">
+            <a href="#">
+              <img
+                src="/img/payment-gatway/payment-card-7.png "
+                alt="payment-card-4"
+                class="img-fluid shadow-sm rounded"
+              />
+            </a>
+          </div>
+          <div class="slider-item" data-aos="flip-right">
+            <a href="#">
+              <img
+                src="/img/payment-gatway/payment-card-8.png "
+                alt="payment-card-4"
+                class="img-fluid shadow-sm rounded"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ************ Footer Section ************** -->
+    <footer class="footer">
+      <!-- START THE CONTENT FOR THE CAMPANY INFO -->
+      <div class="footer-content text-white">
+        <div class="container">
+          <div class="row text-white pt-5">
+            <div class="col-lg-4 pb-5 mx-auto" data-aos="flip-up">
+              <h5 class="text-capitalize fw-bold pb-2">SaveMeney</h5>
+              <p class="lh-lg">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                magnam ratione itaque debitis rerum possimus voluptatum impedit.
+              </p>
+              <div class="social-icons pt-3">
+                <a href="#">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-6 col-lg-2 mb-4 mx-auto" data-aos="flip-down">
+              <h6 class="text-capitalize fw-bold pb-2">Companay</h6>
+              <ul class="list-inline footer-list">
+                <li>
+                  <a href="#">
+                    <i class="las la-angle-double-right"></i>
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="las la-angle-double-right"></i>
+                    Investment
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="las la-angle-double-right"></i>
+                    Faq
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="las la-angle-double-right"></i>
+                    Contact Us
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="las la-angle-double-right"></i>
+                    Privicy Policy
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-4 mx-auto" data-aos="flip-up">
+              <h6 class="text-capitalize fw-bold pb-2">Useful Links</h6>
+              <ul class="list-inline footer-list">
+                <li>
+                  <a href="#">
+                    <i class="las la-angle-double-right"></i>
+                    Manage Account
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="las la-angle-double-right"></i>
+                    How to Withdraw
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="las la-angle-double-right"></i>
+                    Account Info
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="las la-angle-double-right"></i>
+                    Help Line
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 mb-4 mx-auto" data-aos="flip-down">
+              <h6 class="text-capitalize fw-bold pb-2">Contact Us</h6>
+              <ul class="list-inline footer-list">
+                <li><a href="#">Sector: 11, Road: 15, Uttara, Dhaka</a></li>
+                <li><a href="#">Call Us: +880 1876722271</a></li>
+                <li><a href="#">ashrafemon784@gmail.com</a></li>
+                <li><a href="#">ahrrafemon785@gmail.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- START THE COPYRIGHT INFO -->
+      <div class="footer-bottom py-4">
+        <div class="container">
+          <div class="row text-center text-white">
+            <div class="col-12">
+              <div class="footer-bottom__copy-right">
+                &copy; Copyright 2022 <a href="#">SaveMoney.</a> All Right
+                Sesign By <a href="#">Webstor</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/custom-glightbox.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

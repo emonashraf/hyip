@@ -1,0 +1,22 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.table {
+  th {
+    font-size: 1.1rem;
+    font-weight: 600;
+    img {
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    span {
+      margin-right: 1rem;
+    }
+  }
+  thead {
+    background-color: $primary;
+    color: #fff;
+  }
+}

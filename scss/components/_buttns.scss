@@ -1,0 +1,92 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.primary-btn {
+  padding: 0.7rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  color: $white;
+  background-color: $primary;
+  border: 1px solid $primary;
+  transition: all 0.3s ease;
+  display: inline-block;
+  i {
+    margin-left: 0.3rem;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  &:hover {
+    transition: all 0.3s ease;
+    background-color: transparent;
+    color: $primary;
+    border: 1px solid $primary;
+    transition: all 0.5s ease;
+  }
+}
+.outline-btn {
+  padding: 0.7rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  color: $primary;
+  background-color: transparent;
+  border: 1px solid $primary;
+  transition: all 0.3s ease;
+  display: inline-block;
+  i {
+    margin-left: 0.3rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  &:hover {
+    transition: all 0.3s ease;
+    background-color: $primary;
+    color: #fff;
+    border: 1px solid $primary;
+    transition: all 0.5s ease;
+  }
+}
+.white-btn {
+  padding: 0.7rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  color: $primary;
+  background-color: #fff;
+  display: inline-block;
+  transition: all 0.3s ease;
+
+  i {
+    margin-left: 0.3rem;
+  }
+
+  &:hover {
+    transition: all 0.3s ease;
+    background-color: $primary;
+    color: #fff;
+    border: 0.1.3rem solid $primary;
+    transition: all 0.5s ease;
+  }
+}
+
+.card-btn {
+  padding: 0.5rem 1.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: $white;
+  background-color: $primary;
+  border: 0.13rem solid $primary;
+  transition: all 0.3s ease;
+  display: inline-block;
+
+  &:hover {
+    transition: all 0.3s ease;
+    background-color: transparent;
+    color: $primary;
+    border: 0.1.3rem solid $primary;
+    transition: all 0.5s ease;
+  }
+}

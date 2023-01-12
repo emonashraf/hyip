@@ -1,0 +1,122 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.invesment-card {
+  padding: 1.6rem;
+  border-radius: 0.6rem;
+  text-align: center;
+  transition: all 0.5s ease;
+  @include shadow-1;
+  background-color: $white;
+  &:hover {
+    background-color: $primary;
+    color: #fff;
+    transition: all 0.5s ease;
+    .icon {
+      background-color: #fff;
+      color: $primary;
+      transition: all 0.5s ease;
+    }
+    .invesment-card__title {
+      &::before {
+        background-color: #fff;
+        transition: all 0.5s ease;
+      }
+    }
+    .la-check-circle {
+      color: #fff;
+      transition: all 0.5s ease;
+    }
+    .invest-btn {
+      background-color: #fff;
+      color: $primary;
+    }
+  }
+
+  &__icon-box {
+    .icon {
+      @include icon;
+      margin: auto;
+      margin-bottom: 1rem;
+    }
+  }
+  &__title {
+    position: relative;
+    padding-bottom: 1rem;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 1px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all 0.5s ease;
+    }
+  }
+  &__title-1 {
+    &::before {
+      background-color: $cyan;
+    }
+  }
+  &__title-2 {
+    &::before {
+      background-color: $teal;
+    }
+  }
+  &__title-3 {
+    &::before {
+      background-color: $green;
+    }
+  }
+  &__title-4 {
+    &::before {
+      background-color: $purple;
+    }
+  }
+  &__list {
+    margin: 0;
+    padding: 1.5rem 0;
+    list-style: none;
+    text-align: center;
+    .title-box {
+      padding-bottom: 0;
+      .title {
+        margin: 0;
+        span {
+          font-size: 1rem;
+          font-weight: 400;
+        }
+      }
+    }
+    li {
+      padding: 0.8rem 0;
+      font-size: 1rem;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      gap: 0.2rem;
+      .la-check-circle {
+        color: $gray-600;
+        font-size: 1.2rem;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+  &__btn-box {
+    .invest-btn {
+      text-align: center;
+      color: #fff;
+      padding: 0.7rem;
+      border-radius: 2rem;
+      display: block;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .investman-section {
+    padding: 0 2rem;
+  }
+}

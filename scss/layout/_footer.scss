@@ -1,0 +1,78 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.footer {
+  padding-top: 1rem;
+  background-color: $footer-bg;
+
+  // STYLE THE Footer Content
+  .footer-content {
+    border-bottom: 1px solid #152433;
+
+    h5 {
+      font-size: 2rem;
+    }
+    h6 {
+      font-size: 1.6rem;
+    }
+    .footer-list {
+      display: block;
+      list-style-type: none;
+      position: relative;
+      li {
+        margin-bottom: 0.9rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        a {
+          color: $white;
+          text-decoration: none;
+          font-size: 1rem;
+          &:hover {
+            color: $secondary;
+          }
+        }
+        &:hover {
+          color: $secondary;
+          transform: translateX(0.3rem);
+          transition: all 0.5s ease;
+        }
+      }
+    }
+    .social-icons {
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+      i {
+        font-size: 1rem;
+        margin-left: 1rem;
+
+        transition: all 0.3s ease;
+        &:hover {
+          transform: translateY(-0.2rem);
+          transition: all 0.3s ease;
+        }
+        @include media-breakpoint-up(sm) {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  // STYLE THE COPYRIGHT CONTENT
+  .footer-bottom {
+    &__copy-right {
+      font-weight: 400;
+      a {
+        display: inline-block;
+        color: $gray-300;
+        text-decoration: none;
+        transition: all 0.5s ease;
+        &:hover {
+          transform: translateY(-0.2rem);
+          transition: all 0.5s ease;
+        }
+      }
+    }
+  }
+}

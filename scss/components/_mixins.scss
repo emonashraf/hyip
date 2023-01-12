@@ -1,0 +1,62 @@
+@use "../custom" as *;
+// GRADIENT MIXIN
+@mixin gradient {
+  background: linear-gradient(
+    to right,
+    rgba($primary, 0.95),
+    rgba($secondary, 0.95)
+  );
+}
+
+@mixin text-gradient {
+  display: inline-block;
+  background-image: linear-gradient(to right, $primary, $secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin hover-color {
+  @include text-gradient;
+  transition: all 0.3s ease;
+}
+
+// ABSOLUTE CENTER
+@mixin absoluteCenter {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+@mixin icon {
+  display: inline-block;
+  font-size: 2.5rem;
+  padding: 0.8rem;
+  border-radius: 50%;
+}
+@mixin socion-icon {
+  background-color: $primary;
+  color: $white;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid $primary;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: $white;
+    color: $primary;
+  }
+}
+@mixin shadow-1 {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+// TRANSITION PROPERTY
+@mixin transitionProperty {
+  transition: all 1s ease;
+}

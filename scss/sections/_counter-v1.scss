@@ -1,0 +1,36 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+.counter-v1 {
+  margin-top: -9rem;
+}
+.counter-section {
+  .counter-item {
+    background-color: $white;
+    padding: 2.5rem 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    &:hover {
+      transform: translateY(-0.3rem);
+      transition: all 0.5s ease;
+    }
+    .counter-icon-box {
+      .icon {
+        @include icon;
+        margin-bottom: 1.5rem;
+      }
+    }
+    .counter-title {
+      margin-bottom: 1rem;
+    }
+    .counter-number {
+      color: $gray-800;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .counter-section {
+    padding: 0 2rem;
+  }
+}

@@ -1,0 +1,59 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+.dashboard-section {
+  .table > :not(caption) > * > * {
+    padding: 1.8rem 1.5rem;
+  }
+}
+
+.account-menu {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 75px;
+  margin-top: 1rem;
+  justify-content: start;
+  .dashboard-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    .nav-item {
+      margin-bottom: 1.5rem;
+      @include shadow-1;
+      padding: 1rem 1.5rem;
+    }
+  }
+}
+.my-account {
+  .title {
+    margin-bottom: 1rem;
+  }
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+  .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    .left-item {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      line-height: 1;
+      .icon {
+        font-size: 2rem;
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 50%;
+      }
+      .content {
+        .title {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

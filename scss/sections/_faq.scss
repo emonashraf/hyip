@@ -1,0 +1,20 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.faq {
+  .accordion-item{
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  }
+  .accordion-button {
+    font-size: 1rem;
+    font-weight: 500;
+
+  }
+}
+@include media-breakpoint-down(sm) {
+  .faq {
+    .accordion-button {
+      font-size: 1rem;
+    }
+  }
+}

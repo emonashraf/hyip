@@ -1,0 +1,60 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+.blog-datails {
+  .blog-card {
+    @include shadow-1;
+    &__text-box {
+      background-color: rgba(32, 178, 170, 0.2);
+    }
+    &__icon-box {
+      span {
+        padding: 0 2rem;
+      }
+      button {
+        border: none;
+        background-color: transparent;
+        padding: 0.5rem 2rem;
+        &:hover {
+          background-color: $gray-100;
+        }
+      }
+    }
+    &__comment-box {
+      .comment-img {
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+
+  .side-bar {
+    &__archives {
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+      .link {
+        color: $gray-800;
+        font-weight: 500;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+    &__recent-post {
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+      img {
+        width: 70px;
+        height: 70px;
+      }
+      .date {
+        padding-top: 0.5rem;
+        font-size: 0.9rem;
+      }
+    }
+    &__popular-tags {
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    }
+  }
+}
